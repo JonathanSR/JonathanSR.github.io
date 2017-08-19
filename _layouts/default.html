@@ -24,5 +24,8 @@
         $('nav a').addClass('waves-effect');
     });
     </script>
+    {% if jekyll.environmnet == 'production' %}
+    {% include analytics.html %}
+    {% end %}
 </body>
 </html>
